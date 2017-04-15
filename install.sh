@@ -27,7 +27,7 @@ clang --version
 echo "=============== Successfully Installed clang 3.9.0 ============"
 
 echo "==================== Installing zephyr dependencies ==================="
-apt-get install git make gcc g++ python3-ply python3-yaml python-yaml gcc-arm-none-eabi
+apt-get install git make gcc g++ python3-ply python3-yaml python-yaml gcc-arm-none-eabi ccache
 
 wget https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/download/0.9/zephyr-sdk-0.9-setup.run
 chmod +x zephyr-sdk-0.9-setup.run
