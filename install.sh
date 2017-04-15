@@ -19,7 +19,7 @@ echo "================== Successfully Installed gcc 6 ==============="
 
 
 echo "==================== Installing zephyr dependencies ==================="
-apt-get install git make gcc g++ python3-ply ncurses-dev python3-yaml python-yaml
+apt-get install git make gcc g++ python3-ply python3-yaml python-yaml
 
 wget https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/download/0.9/zephyr-sdk-0.9-setup.run
 chmod +x zephyr-sdk-0.9-setup.run
