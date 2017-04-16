@@ -27,13 +27,13 @@ clang --version
 echo "=============== Successfully Installed clang 3.9.0 ============"
 
 echo "==================== Installing zephyr dependencies ==================="
-apt-get install git make gcc g++ python3-ply python3-yaml python-yaml
+apt-get install git make gcc g++ python3-ply python3-yaml python-yaml doxygen
 
 wget https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/download/0.9/zephyr-sdk-0.9-setup.run
 chmod +x zephyr-sdk-0.9-setup.run
 ./zephyr-sdk-0.9-setup.run --quiet -- -d /opt/sdk/zephyr-sdk-0.9
 rm zephyr-sdk-0.9-setup.run
-pip install awscli
+pip install awscli sphinx breathe sphinx_rtd_theme
 echo "=============== Successfully Installed zephyr deps ============"
 
 wget https://launchpad.net/ubuntu/+archive/primary/+files/ccache_3.3.3-1_amd64.deb
