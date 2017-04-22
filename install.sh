@@ -39,4 +39,7 @@ echo "=============== Successfully Installed zephyr deps ============"
 wget https://launchpad.net/ubuntu/+archive/primary/+files/ccache_3.3.3-1_amd64.deb
 dpkg -i ccache_3.3.3-1_amd64.deb
 
-pip install gitlint
+
+git clone https://github.com/zephyriot/gitlint.git
+cd gitlint
+python setup.py install
