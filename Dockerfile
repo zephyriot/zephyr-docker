@@ -1,4 +1,4 @@
-FROM drydock/u16all
+FROM drydock/u16:v5.4.1
 
 ADD . /zephyr-docker
 
